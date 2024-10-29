@@ -9,9 +9,10 @@ import joimage from "../../public/jo.jpeg";
 
 <Layout title="Dr. Jyotsna Singh">
   <div class="flex flex-col min-h-screen">
-    <header class="px-10 lg:px-6 h-14 flex items-center">
-      <a class="flex items-center justify-center" href="#">
+    <header class="px-5 lg:px-6 h-14 flex items-center">
+      <a class="flex items-center justify-center gap-2 font-bold" href="#">
         <Stethoscope className="h-6 w-6" />
+        <span>Dr. Jyotsna Singh</span>
         <span class="sr-only">Acme Pediatrics</span>
       </a>
       <nav class="ml-auto flex gap-4 sm:gap-6">
@@ -61,18 +62,18 @@ import joimage from "../../public/jo.jpeg";
       </section>
       <section
         id="about"
-        class="grid grid-cols-2 place-content-center bg-gray-100"
+        class="grid lg:grid-cols-2 place-content-center bg-gray-100"
       >
-        <div class="container place-content-center px-4 md:px-6">
+        <div class="grid place-content-center p-6 md:p-8">
           <div
             class="flex flex-col items-center justify-center space-y-4 text-center"
           >
-            <div class="space-y-2">
+            <div class="space-y-6">
               <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
                 About Dr. Jyotsna Singh
               </h2>
               <p
-                class="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+                class="max-w-[900px] text-left text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
               >
                 A thorough professional with more than 6 years experience in
                 diagnosing and treating pediatric patients from age 1 day of
@@ -105,7 +106,7 @@ import joimage from "../../public/jo.jpeg";
             <div
               class="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg"
             >
-              <Heart class="h-12 w-12 mb-2" />
+              <Heart className="h-12 w-12 mb-2" />
               <h3 class="text-xl font-bold">Preventive Care</h3>
               <p class="text-gray-500 text-center">
                 Regular check-ups and vaccinations to keep your child healthy.
@@ -114,7 +115,7 @@ import joimage from "../../public/jo.jpeg";
             <div
               class="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg"
             >
-              <Stethoscope class="h-12 w-12 mb-2" />
+              <Stethoscope className="h-12 w-12 mb-2" />
               <h3 class="text-xl font-bold">Illness Treatment</h3>
               <p class="text-gray-500 text-center">
                 Expert care for common childhood illnesses and conditions.
@@ -123,7 +124,7 @@ import joimage from "../../public/jo.jpeg";
             <div
               class="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg"
             >
-              <Users class="h-12 w-12 mb-2" />
+              <Users className="h-12 w-12 mb-2" />
               <h3 class="text-xl font-bold">Family Education</h3>
               <p class="text-gray-500 text-center">
                 Guidance on nutrition, development, and parenting strategies.
@@ -146,7 +147,7 @@ import joimage from "../../public/jo.jpeg";
             {
               [1, 2, 3].map((i) => (
                 <div class="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg bg-white">
-                  <Star class="h-6 w-6 text-yellow-500" />
+                  <Star className="h-6 w-6 text-yellow-500" />
                   <p class="text-gray-500 text-center italic">
                     "Dr. Smith is amazing with our kids. She always takes the
                     time to listen and explain everything."
